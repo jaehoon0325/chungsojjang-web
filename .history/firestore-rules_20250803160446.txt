@@ -1,0 +1,27 @@
+// Firestore 보안 규칙 (개발용 - 테스트 모드)
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 고객 후기 컬렉션 - 읽기는 모두 허용, 쓰기는 인증된 사용자만
+    match /customerTestimonials/{document} {
+      allow read: if true;
+      allow write: if true; // 개발용, 나중에 인증 추가
+    }
+    
+    // 포트폴리오 케이스 컬렉션
+    match /portfolioCases/{document} {
+      allow read: if true;
+      allow write: if true; // 개발용, 나중에 인증 추가
+    }
+  }
+}
+
+// Storage 보안 규칙 (개발용)
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /testimonials/{allPaths=**} {
+      allow read, write: if true; // 개발용, 나중에 인증 추가
+    }
+  }
+}
