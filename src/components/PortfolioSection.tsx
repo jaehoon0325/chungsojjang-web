@@ -112,11 +112,11 @@ const PortfolioSection = () => {
 
 
   return (
-    <section id="portfolio" className="py-24 bg-gradient-to-br from-gray-50 to-slate-100">
+    <section id="portfolio" className="py-24 bg-gradient-to-br from-cyan-50 via-blue-50 to-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-slate-800 font-semibold text-sm tracking-wide uppercase">PORTFOLIO</span>
-          <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 mt-2">시공사례</h3>
+          <span className="text-blue-600 font-semibold text-sm tracking-wide uppercase">PORTFOLIO</span>
+          <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-teal-700 bg-clip-text text-transparent mb-6 mt-2">시공사례</h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">전문성이 입증된 청소 결과물을 확인해보세요</p>
         </div>
 
@@ -204,7 +204,7 @@ const PortfolioSection = () => {
                   {/* 후기 작성 버튼 */}
                   <button
                     onClick={() => setShowTestimonialForm(true)}
-                    className="bg-gradient-to-r from-slate-700 to-slate-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-slate-600 hover:to-slate-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                     suppressHydrationWarning
                   >
                     <div className="flex items-center space-x-2">

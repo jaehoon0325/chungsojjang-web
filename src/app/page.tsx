@@ -5,26 +5,41 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Header */}
-      <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
+      <header className="bg-white/95 backdrop-blur-md shadow-xl sticky top-0 z-50 border-b border-blue-100">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 py-2">
             <div className="flex items-center">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-r from-slate-800 to-slate-700 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">청</span>
                 </div>
-                <h1 className="text-2xl font-bold text-slate-800">청소반장</h1>
-                <span className="text-sm text-gray-500 font-medium">PREMIUM CLEANING</span>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-800 to-teal-700 bg-clip-text text-transparent">청소반장</h1>
+                <span className="text-sm text-blue-600 font-medium tracking-wide">PREMIUM CLEANING</span>
               </div>
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#home" className="text-gray-800 hover:text-slate-800 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg">홈</a>
-                <a href="#services" className="text-gray-800 hover:text-slate-800 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg">서비스</a>
-                <a href="#portfolio" className="text-gray-800 hover:text-slate-800 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg">시공사례</a>
-                <a href="#about" className="text-gray-800 hover:text-slate-800 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg">회사소개</a>
-                <a href="#contact" className="text-gray-800 hover:text-slate-800 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg">견적문의</a>
-                <a href="tel:033-900-9922" className="bg-gradient-to-r from-slate-800 to-slate-700 text-white px-6 py-3 text-sm font-bold rounded-lg hover:from-slate-700 hover:to-slate-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <div className="ml-10 flex items-baseline space-x-6">
+                <a href="#home" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-all duration-300 hover:bg-blue-50 rounded-lg relative group">
+                  홈
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                </a>
+                <a href="#services" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-all duration-300 hover:bg-blue-50 rounded-lg relative group">
+                  서비스
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                </a>
+                <a href="#portfolio" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-all duration-300 hover:bg-blue-50 rounded-lg relative group">
+                  시공사례
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                </a>
+                <a href="#about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-all duration-300 hover:bg-blue-50 rounded-lg relative group">
+                  회사소개
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                </a>
+                <a href="#contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-all duration-300 hover:bg-blue-50 rounded-lg relative group">
+                  견적문의
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                </a>
+                <a href="tel:033-900-9922" className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-6 py-3 text-sm font-bold rounded-lg hover:from-blue-700 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hover:scale-105">
                   전문상담
                 </a>
               </div>
@@ -41,54 +56,54 @@ export default function Home() {
       </header>
 
       {/* Hero Section with Professional Cleaning Image */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-teal-900">
         {/* Background Image with Professional Cleaning Scene */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-75"
              style={{
                backgroundImage: `url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
              }}>
         </div>
         
         {/* Professional Cleaning Equipment Overlay */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
              style={{
                backgroundImage: `url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
              }}>
         </div>
 
-        {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-slate-800/80 to-gray-900/90"></div>
+        {/* Modern Gradient Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-blue-800/75 to-teal-900/85"></div>
         
-        {/* Professional Pattern Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-800/20 to-gray-900/40"></div>
+        {/* Dynamic Pattern Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-teal-600/20 to-blue-900/30"></div>
 
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="mb-6">
-            <span className="inline-block px-6 py-3 bg-slate-700/90 text-slate-100 text-sm font-bold rounded-full border-2 border-slate-600/50 backdrop-blur-sm shadow-xl">
+            <span className="inline-block px-6 py-3 bg-gradient-to-r from-teal-500/80 to-blue-500/80 text-white text-sm font-bold rounded-full border-2 border-teal-400/30 backdrop-blur-sm shadow-xl">
               20년 경험의 프리미엄 청소 전문기업
             </span>
           </div>
           
           <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white drop-shadow-2xl">
             완벽한 청소,<br />
-            <span className="bg-gradient-to-r from-gray-300 to-white bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-gradient-to-r from-teal-300 via-blue-300 to-cyan-300 bg-clip-text text-transparent drop-shadow-lg">
               프로의 손길
             </span>
           </h2>
           
-          <p className="text-xl md:text-2xl mb-12 text-gray-100 font-light max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
+          <p className="text-xl md:text-2xl mb-12 text-blue-100 font-light max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
             건물관리부터 홈크리닝, 오피스크리닝까지<br />
-            <span className="font-semibold text-white">전문적이고 체계적인 청소 솔루션</span>을 제공합니다
+            <span className="font-semibold text-teal-200">전문적이고 체계적인 청소 솔루션</span>을 제공합니다
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6 max-w-lg mx-auto">
-            <a href="#contact" className="group bg-gradient-to-r from-slate-700 to-slate-600 text-white px-10 py-5 text-lg font-bold rounded-xl hover:from-slate-600 hover:to-slate-500 transition-all duration-300 shadow-2xl hover:shadow-slate-500/30 transform hover:-translate-y-1 hover:scale-105">
+            <a href="#contact" className="group bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-5 text-lg font-bold rounded-xl hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 shadow-2xl hover:shadow-emerald-500/30 transform hover:-translate-y-1 hover:scale-105">
               <span className="flex items-center justify-center">
                 무료 현장 견적
               </span>
             </a>
-            <a href="tel:033-900-9922" className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white px-10 py-5 text-lg font-semibold rounded-xl hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-xl">
+            <a href="tel:033-900-9922" className="bg-white/15 backdrop-blur-md border-2 border-white/40 text-white px-10 py-5 text-lg font-semibold rounded-xl hover:bg-white/25 hover:border-white/60 transition-all duration-300 shadow-xl">
               <span className="flex items-center justify-center">
                 즉시 전화상담
               </span>
@@ -96,17 +111,17 @@ export default function Home() {
           </div>
 
           {/* Professional Credentials */}
-          <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-gray-100">
+          <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-blue-100">
             <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-slate-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></div>
               <span>정부 인증 업체</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-slate-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full"></div>
               <span>전문 장비 완비</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-slate-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full"></div>
               <span>100% 보험 보장</span>
             </div>
           </div>
@@ -117,42 +132,42 @@ export default function Home() {
       <section id="services" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-slate-800 font-semibold text-sm tracking-wide uppercase">PROFESSIONAL SERVICES</span>
-            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 mt-2">전문 청소 서비스</h3>
+            <span className="text-blue-600 font-semibold text-sm tracking-wide uppercase">PROFESSIONAL SERVICES</span>
+            <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-teal-700 bg-clip-text text-transparent mb-6 mt-2">전문 청소 서비스</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">다양한 분야별 전문 청소 솔루션을 제공합니다</p>
           </div>
 
           {/* 주요업무 - 한줄 강조 형태 */}
           <div className="mb-16">
-            <div className="bg-gradient-to-r from-slate-800 to-gray-800 rounded-3xl shadow-2xl p-8 lg:p-12 text-white relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-600/20 to-gray-600/20 backdrop-blur-sm"></div>
+            <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-teal-800 rounded-3xl shadow-2xl p-8 lg:p-12 text-white relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm"></div>
               <div className="relative z-10">
                 <div className="text-center mb-8">
-                  <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500/30 to-teal-500/30 backdrop-blur-sm rounded-full text-sm font-semibold mb-4">
                     핵심 전문 분야
                   </div>
                   <h4 className="text-3xl font-bold mb-4">주요업무</h4>
-                  <p className="text-gray-100 text-lg">건물 전반적인 관리와 특수 청소 전문 서비스</p>
+                  <p className="text-blue-100 text-lg">건물 전반적인 관리와 특수 청소 전문 서비스</p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
-                  <div className="group flex items-center bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                    <div className="w-3 h-3 bg-gray-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                  <div className="group flex items-center bg-emerald-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-emerald-400/30 hover:bg-emerald-500/30 hover:border-emerald-400/50 transition-all duration-300">
+                    <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                     <span className="font-semibold text-lg">건물관리</span>
                   </div>
-                  <div className="group flex items-center bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                    <div className="w-3 h-3 bg-gray-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                  <div className="group flex items-center bg-blue-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-400/30 hover:bg-blue-500/30 hover:border-blue-400/50 transition-all duration-300">
+                    <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                     <span className="font-semibold text-lg">소독방역</span>
                   </div>
-                  <div className="group flex items-center bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                    <div className="w-3 h-3 bg-gray-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                  <div className="group flex items-center bg-teal-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-teal-400/30 hover:bg-teal-500/30 hover:border-teal-400/50 transition-all duration-300">
+                    <div className="w-3 h-3 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                     <span className="font-semibold text-lg">물탱크청소</span>
                   </div>
-                  <div className="group flex items-center bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                    <div className="w-3 h-3 bg-gray-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                  <div className="group flex items-center bg-cyan-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-cyan-400/30 hover:bg-cyan-500/30 hover:border-cyan-400/50 transition-all duration-300">
+                    <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                     <span className="font-semibold text-lg">청소용역</span>
                   </div>
-                  <div className="group flex items-center bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                    <div className="w-3 h-3 bg-gray-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
+                  <div className="group flex items-center bg-indigo-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-indigo-400/30 hover:bg-indigo-500/30 hover:border-indigo-400/50 transition-all duration-300">
+                    <div className="w-3 h-3 bg-gradient-to-r from-indigo-400 to-blue-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                     <span className="font-semibold text-lg">준공청소</span>
                   </div>
                 </div>
@@ -177,7 +192,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">새집 준비</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
+                  <span className="bg-emerald-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
                 </div>
               </div>
 
@@ -194,7 +209,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">완벽한 이주</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
+                  <span className="bg-teal-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
                 </div>
               </div>
 
@@ -211,7 +226,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">쾌적한 업무환경</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
+                  <span className="bg-blue-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
                 </div>
               </div>
 
@@ -228,7 +243,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">전문 고소작업</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
+                  <span className="bg-indigo-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
                 </div>
               </div>
 
@@ -245,7 +260,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">정기 관리</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
+                  <span className="bg-cyan-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
                 </div>
               </div>
 
@@ -262,7 +277,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">깊숙한 세정</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
+                  <span className="bg-purple-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
                 </div>
               </div>
 
@@ -279,7 +294,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">섬유 전문케어</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
+                  <span className="bg-violet-700/90 text-white px-2 py-1 text-xs font-bold rounded">오피스</span>
                 </div>
               </div>
 
@@ -296,7 +311,7 @@ export default function Home() {
                   <p className="text-xs text-gray-300">필요한 곳만</p>
                 </div>
                 <div className="absolute top-3 right-3">
-                  <span className="bg-slate-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
+                  <span className="bg-orange-600/90 text-white px-2 py-1 text-xs font-bold rounded">홈</span>
                 </div>
               </div>
             </div>
@@ -308,12 +323,12 @@ export default function Home() {
       <PortfolioSection />
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-gradient-to-br from-slate-50 to-gray-50">
+      <section id="about" className="py-24 bg-gradient-to-br from-blue-50 via-teal-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-slate-800 font-semibold text-sm tracking-wide uppercase">WHY CHOOSE US</span>
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 mt-2">
+              <span className="text-blue-600 font-semibold text-sm tracking-wide uppercase">WHY CHOOSE US</span>
+              <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-teal-700 bg-clip-text text-transparent mb-8 mt-2">
                 청소반장을 선택하는<br />특별한 이유
               </h3>
               <p className="text-lg text-gray-600 mb-12 leading-relaxed">
@@ -334,7 +349,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <div className="bg-gradient-to-r from-slate-600 to-slate-500 w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
+                    <div className="bg-gradient-to-r from-blue-600 to-cyan-500 w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
                       <div className="w-6 h-6 bg-white rounded-full"></div>
                     </div>
                   </div>
@@ -345,7 +360,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <div className="bg-gradient-to-r from-slate-600 to-slate-500 w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
+                    <div className="bg-gradient-to-r from-teal-600 to-green-500 w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
                       <div className="w-6 h-6 bg-white rounded-full"></div>
                     </div>
                   </div>
@@ -370,7 +385,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-gray-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-900 via-teal-900 to-cyan-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">신뢰받는 청소 전문기업</h3>
@@ -410,8 +425,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gray-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900"></div>
+      <section id="contact" className="py-24 bg-gradient-to-br from-blue-900 via-teal-800 to-cyan-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/50 via-teal-700/50 to-cyan-800/50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-gray-300 font-semibold text-sm tracking-wide uppercase">GET IN TOUCH</span>
@@ -432,7 +447,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center group">
-                  <div className="bg-gradient-to-r from-slate-600 to-slate-500 w-14 h-14 rounded-xl flex items-center justify-center mr-4 group-hover:from-slate-500 group-hover:to-slate-400 transition-all duration-300">
+                  <div className="bg-gradient-to-r from-blue-600 to-cyan-500 w-14 h-14 rounded-xl flex items-center justify-center mr-4 group-hover:from-blue-500 group-hover:to-cyan-400 transition-all duration-300">
                     <div className="w-7 h-7 bg-white rounded"></div>
                   </div>
                   <div>
@@ -441,7 +456,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center group">
-                  <div className="bg-gradient-to-r from-slate-600 to-slate-500 w-14 h-14 rounded-xl flex items-center justify-center mr-4 group-hover:from-slate-500 group-hover:to-slate-400 transition-all duration-300">
+                  <div className="bg-gradient-to-r from-teal-600 to-green-500 w-14 h-14 rounded-xl flex items-center justify-center mr-4 group-hover:from-teal-500 group-hover:to-green-400 transition-all duration-300">
                     <div className="w-7 h-7 bg-white rounded"></div>
                   </div>
                   <div>
@@ -479,7 +494,7 @@ export default function Home() {
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-slate-700 to-slate-600 text-white py-4 px-8 rounded-xl font-bold text-lg hover:from-slate-600 hover:to-slate-500 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+                  className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-4 px-8 rounded-xl font-bold text-lg hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
                 >
                   무료 컨설팅 신청하기
                 </button>
@@ -490,12 +505,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-16 border-t border-gray-800">
+      <footer className="bg-gradient-to-br from-blue-900 via-teal-900 to-cyan-900 text-white py-16 border-t border-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-slate-800 to-slate-700 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-xl">청</span>
                 </div>
                 <div>
@@ -532,7 +547,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="border-t border-teal-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">&copy; 2024 (주)청소반장. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">개인정보처리방침</a>
